@@ -8,7 +8,7 @@
 # Site settings
 title: Mahmood Magic
 email: magicmahmood@gmail.com
-description: Mahmood Magic is a world class duo mastering the secrets to the art of mentalism and magic.
+description: Mahmood Magic is a world class duo performing magic and mentalism in Toronto, Vaughan, and the GTA. The duo have performed at corporate events, showers, birthdays and other special events. Book an event today!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.mahmoodmagic.com" # the base hostname & protocol for your site
 gems:
