@@ -1,0 +1,151 @@
+.section {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include media-query($mq-palm) {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.section-content {
+  z-index: 1;
+  position: relative;
+  @include media-query($mq-palm) {
+    color: white;
+  }
+}
+
+.section--hero {
+  background-image: url('../images/lightbulb.jpg');
+  padding: 60px;
+
+  @include media-query($mq-palm) {
+    min-height: 100vh;
+    background-size: cover;
+
+    .section-content {
+      position: absolute;
+      top: 50%;
+      left: 60px;
+      transform: translateY(-50%);
+      width: 40%;
+      min-width: 300px;
+    }
+  }
+}
+
+.section--about-one {
+  padding: 60px;
+  padding-top: 77vw;
+  background-image: url('../images/about-one.jpg');
+
+  @include media-query($mq-palm) {
+    padding: 0;
+    .section-content {
+      position: absolute;
+      bottom: 60px;
+      right: 60px;
+      text-align: right;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+.section--about-two {
+  padding: 60px;
+  padding-top: 77vw;
+  background-image: url('../images/about-two.jpg');
+  background-position: top right;
+
+  @include media-query($mq-palm) {
+    padding: 0;
+    .section-content {
+      width: 100%;
+      max-width: 300px;
+      padding-top: 60px;
+      padding-left: 60px;
+    }
+  }
+}
+
+.section--about-three {
+  padding: 60px;
+  padding-top: 77vw;
+  background-image: url('../images/about-three.jpg');
+
+  @include media-query($mq-palm) {
+    padding: 0;
+    .section-content {
+      position: absolute;
+      bottom: 60px;
+      right: 60px;
+      text-align: right;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+.section--why {
+  background-image: url('../images/why.jpg');
+  padding: 60px;
+  padding-top: 66vw;
+
+  @include media-query($mq-palm) {
+    padding: 60px;
+  }
+
+  .section-content {
+    color: black;
+    font-size: 0.9rem;
+
+    @include media-query($mq-palm) {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .button {
+    margin-top: 30px;
+  }
+}
+
+
+.gradient-right {
+  @include media-query($mq-palm) {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient( to left, rgba(0,0,0,1), rgba(0,0,0,0));
+      z-index: 0;
+    }
+  }
+}
+
+.gradient-left {
+  @include media-query($mq-palm) {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient( to right, rgba(0,0,0,1), rgba(0,0,0,0));
+      z-index: 0;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.testimonial {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 23px;
+  padding-top: 40vw;
+  @include media-query($mq-palm) {
+    padding: 170px 60px;
+    background-size: cover;
+  }
+}
+
+.testimonial--one {
+  background-image: url('../images/testimonial-01.jpg');
+  @include media-query($mq-palm) {
+    background-position: center;
+  }
+}
+
+.testimonial--two {
+  background-image: url('../images/testimonial-02.jpg');
+  @include media-query($mq-palm) {
+    background-position: center;
+  }
+}
+
+.testimonial--three {
+  background-image: url('../images/testimonial-03.jpg');
+  @include media-query($mq-palm) {
+    background-position: center;
+  }
+}
+
+.testimonial--four {
+  background-image: url('../images/testimonial-04.jpg');
+  @include media-query($mq-palm) {
+    background-position: center;
+  }
+}
+
+.testimonial--five {
+  background-image: url('../images/testimonial-05.jpg');
+  @include media-query($mq-palm) {
+    background-position: center;
+  }
+}
+
+.testimonial--six {
+  background-image: url('../images/testimonial-06.jpg');
+  @include media-query($mq-palm) {
+    background-position: center;
+  }
+}
+
+.testimonial-content {
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+
+  @include media-query($mq-palm) {
+    color: white;
+    max-width: 550px;
+  }
+}
+
+.testimonial-author {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.testimonial-description {
+  display: block;
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+
+
+.testimonial--right {
+  @include media-query($mq-palm) {
+    text-align: right;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient( to left, rgba(0,0,0,1), rgba(0,0,0,0));
+      z-index: 0;
+    }
+  }
+}
+
+.testimonial--left {
+  @include media-query($mq-palm) {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient( to right, rgba(0,0,0,1), rgba(0,0,0,0));
+      z-index: 0;
+    }
+  }
+}

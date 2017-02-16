@@ -1,0 +1,18 @@
+.sidebar {
+
+  @include media-query($mq-palm) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+  }
+}
+
+.content {
+
+  @include media-query($mq-palm) {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+  }
+}

@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.9rem 2.1rem;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: padding 0.15s ease-in-out;
+  color: white;
+  background: #333;
+
+  &:hover,
+  &:focus {
+    padding: 0.9rem 2.3rem;
+  }
+}
+
+.button--white {
+  color: black;
+  background: white;
+}

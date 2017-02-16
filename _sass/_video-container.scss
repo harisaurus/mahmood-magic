@@ -1,0 +1,51 @@
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(0.5);
+  transition: all 0.3s ease-in-out;
+
+  &.is-visible {
+    opacity: 1;
+    z-index: 2;
+    transform: scale(1);
+  }
+}
+
+.video-close {
+  color: white;
+  position: fixed;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+  text-decoration: none;
+  transform: scale(1);
+  z-index: 3;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.3);
+  }
+}
+
+.video-item-wrapper {
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
