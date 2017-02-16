@@ -2,10 +2,8 @@
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 23px;
-  padding-top: 40vw;
+  padding: 40px;
+  padding-top: 48vw;
   @include media-query($mq-palm) {
     padding: 170px 60px;
     background-size: cover;
