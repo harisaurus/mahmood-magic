@@ -8,6 +8,10 @@
     padding: 170px 60px;
     background-size: cover;
   }
+
+  em {
+    font-weight: bold;
+  }
 }
 
 .testimonial--one {
@@ -47,6 +51,20 @@
 
 .testimonial--six {
   background-image: url('../images/testimonial-06.jpg');
+  @include media-query($mq-palm) {
+    background-position: center;
+  }
+}
+
+.testimonial--seven {
+  background-image: url('../images/testimonial-07.jpg');
+  @include media-query($mq-palm) {
+    background-position: center;
+  }
+}
+
+.testimonial--eight {
+  background-image: url('../images/testimonial-08.jpg');
   @include media-query($mq-palm) {
     background-position: center;
   }
