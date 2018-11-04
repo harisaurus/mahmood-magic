@@ -38,7 +38,13 @@
       transform: translateY(-50%);
       width: 40%;
       min-width: 300px;
+      max-width: 300px;
+      text-align: center;
     }
+  }
+
+  .hero-logo {
+    margin-bottom: 20px;
   }
 }
 
@@ -55,7 +61,7 @@
       right: 60px;
       text-align: right;
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
     }
   }
 }
@@ -70,7 +76,7 @@
     padding: 0;
     .section-content {
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
       padding-top: 60px;
       padding-left: 60px;
     }
@@ -90,13 +96,14 @@
       right: 60px;
       text-align: right;
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
     }
   }
 }
 
 .section--why {
-  background-image: url('../images/why.jpg');
+  // background-image: url('../images/why.jpg');
+  background-color: white;
   padding: 40px;
   padding-top: 66vw;
 

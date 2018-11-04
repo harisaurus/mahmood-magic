@@ -70,6 +70,20 @@
   }
 }
 
+.testimonial--nine {
+  background-image: url('../images/testimonial-09.jpg');
+  @include media-query($mq-palm) {
+    background-position: center;
+  }
+}
+
+.testimonial--ten {
+  background-image: url('../images/testimonial-10.jpg');
+  @include media-query($mq-palm) {
+    background-position: center top;
+  }
+}
+
 .testimonial-content {
   font-size: 0.9rem;
   position: relative;
