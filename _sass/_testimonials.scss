@@ -2,8 +2,16 @@
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 40px;
-  padding-top: 48vw;
+  padding: 40px 0 0;
+
+  .testimonial-content {
+    padding: 0 40px;
+
+    @include media-query($mq-palm) {
+      padding: 0;
+    }
+  }
+
   @include media-query($mq-palm) {
     padding: 170px 60px;
     background-size: cover;
@@ -14,74 +22,85 @@
   }
 }
 
-.testimonial--one {
-  background-image: url('../images/testimonial-01.jpg');
+.testimonial-image {
+  display: block;
+  margin-bottom: 40px;
+
   @include media-query($mq-palm) {
+    display: none;
+  }
+}
+
+.testimonial--one {
+  @include media-query($mq-palm) {
+    background-image: url('../images/testimonial-01.jpg');
     background-position: center;
   }
 }
 
 .testimonial--two {
-  background-image: url('../images/testimonial-02.jpg');
   @include media-query($mq-palm) {
+    background-image: url('../images/testimonial-02.jpg');
     background-position: center;
   }
 }
 
 .testimonial--three {
-  background-image: url('../images/testimonial-03.jpg');
   @include media-query($mq-palm) {
+    background-image: url('../images/testimonial-03.jpg');
     background-position: center;
   }
 }
 
 .testimonial--four {
-  background-image: url('../images/testimonial-04.jpg');
   @include media-query($mq-palm) {
+    background-image: url('../images/testimonial-04.jpg');
     background-position: center;
   }
 }
 
 .testimonial--five {
-  background-image: url('../images/testimonial-05.jpg');
   @include media-query($mq-palm) {
+    background-image: url('../images/testimonial-05.jpg');
     background-position: center;
   }
 }
 
 .testimonial--six {
-  background-image: url('../images/testimonial-06.jpg');
   @include media-query($mq-palm) {
+    background-image: url('../images/testimonial-06.jpg');
     background-position: center;
   }
 }
 
 .testimonial--seven {
-  background-image: url('../images/testimonial-07.jpg');
   @include media-query($mq-palm) {
+    background-image: url('../images/testimonial-07.jpg');
     background-position: center;
   }
 }
 
 .testimonial--eight {
-  background-image: url('../images/testimonial-08.jpg');
   @include media-query($mq-palm) {
+    background-image: url('../images/testimonial-08.jpg');
     background-position: center;
   }
 }
 
 .testimonial--nine {
-  background-image: url('../images/testimonial-09.jpg');
   @include media-query($mq-palm) {
+    background-image: url('../images/testimonial-09.jpg');
     background-position: center;
   }
 }
 
 .testimonial--ten {
-  background-image: url('../images/testimonial-10.jpg');
   @include media-query($mq-palm) {
+    background-image: url('../images/testimonial-10.jpg');
     background-position: center top;
   }
+
+  padding-bottom: 40px;
 }
 
 .testimonial-content {
