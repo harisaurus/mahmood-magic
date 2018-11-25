@@ -103,12 +103,13 @@
 
 .section--why {
   // background-image: url('../images/why.jpg');
-  background-color: white;
+  background-image: url('../images/what-to-expect.jpg');
   padding: 40px;
-  padding-top: 66vw;
+  padding-top: 76vw;
 
   @include media-query($mq-palm) {
     padding: 60px;
+    background-color: black;
   }
 
   .section-content {
@@ -123,6 +124,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 30px;
     }
   }
 
