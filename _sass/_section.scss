@@ -19,7 +19,8 @@
 }
 
 .section--hero {
-  background-image: url('../images/lightbulb.jpg');
+  // background-image: url('../images/lightbulb.jpg');
+  background-color: black;
   padding: 30px;
   background-size: cover;
   text-align: center;
@@ -34,8 +35,8 @@
     .section-content {
       position: absolute;
       top: 50%;
-      left: 60px;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 40%;
       min-width: 300px;
       max-width: 300px;
@@ -45,6 +46,12 @@
 
   .hero-logo {
     margin-bottom: 20px;
+    max-width: 300px;
+    display: inline-block;
+
+    @include media-query($mq-palm) {
+      max-width: auto;
+    }
   }
 }
 
